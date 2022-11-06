@@ -1,0 +1,21 @@
+﻿@model Owner
+
+<h1>Add owner</h1>
+<form method="post" class="mt-5">
+    <div class="mb-3">
+        <label asp-for="FirstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" asp-for="FirstName" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="LastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" asp-for="LastName" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="DriverLicense" class="form-label">Driver License</label>
+        <input type="text" class="form-control" asp-for="DriverLicense" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a asp-controller="Owner" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to the list</a>
+</form>
